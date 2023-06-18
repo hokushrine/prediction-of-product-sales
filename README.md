@@ -8,8 +8,6 @@ Determine sales for food items based off of the store and see which properties a
 
 
 ### Data:
-Data source: https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/
-
 Data dictionary:
 | Variable Name	| Description |
 |:-------------:|:-----------:|
@@ -104,6 +102,7 @@ Results for testing data:
 - Linear regression has an overall low R2 of training 56%/testing 57%
 - Decision tree has an overall low R2 of 60%/testing 59%
 - Random forest has a major overfitting issue as indicated by the high training R2 of 93% but low testing R2 of 56%.
+
 All models need further experimenting with tuning in their current state. The best model at the moment is the decision tree model, as it offers a near 1:1 R2 for both training, albeit at 60%.
 
 The decision tree and random forest are both contenders for best models after further tuning is done.
