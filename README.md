@@ -53,6 +53,32 @@ Models used:
 - Random Forest
 - Tuned Random Forest
 ```
+### Linear Regression Insights
+**Linear Regression Coefficients:**
+![](images/top_10_coefficents.png)
+
+- **The top 3 coefficients are:** Outlet_Type_Supermarket Type 3, Outlet_Identifier_OUT027, and Outlet_Size_Medium
+  - Stores identified as Outlet_Type_Supermarket Type3 see an increase item sales by $588.235
+  - Stores identified as Outlet_Identifier_Medium see an increase item sales by $588.235
+  - Stores identified as Outlet_Size_Medium see an increase of item sales by $421.406
+
+- **The top 3 negative coefficients are:**
+  - Outlet_Identifier_OUT010: Stores with this identifier have a drop in sales by $470.065
+  - Outlet_Identifier_OUT019: Stores with this identifier have a drop in sales by $469.809
+  - Outlet_Type_Grocery_Store: Stores with this identifier have a drop in sales by $895.874.
+
+
+### Random Forest Feature Importances
+**Important features in Random Forest:**
+![](images/top_10_important_features.png)
+
+Top 5 most important features:
+- Item_MRP
+- Outlet_Type_Grocery_Store
+- Item_Visibility
+- Item_Weight
+- Outlet_Type_Supermarket Type3
+
 ### Final Model Output
 Linear Regression Training Scores:
 
