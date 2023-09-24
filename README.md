@@ -79,6 +79,29 @@ Top 5 most important features:
 - Item_Weight
 - Outlet_Type_Supermarket Type3
 
+### SHAP Plot Interpretations
+**SHAP Bar Plot**
+![](images/summary_plot_1.png)
+The SHAP plot and feature importances are both very similar.
+- In both plots, Item_MRP is the top feature used
+- Outlet_Type_GroceryStore is 2nd for both
+
+The differences begin with the third row.
+- The SHAP plot shows Item_Visibility at 5th but in the feature importance, it is ranked 3rd.
+- Item_Weight is outside of the top 5 in the SHAP but is ranked 4th in the important features.
+
+Overall, the top 5 majority of features are the same.
+
+**SHAP Dot Plot**
+![](images/summary_plot_2.png)
+- Top three features:
+    - Item_MRP
+      - The plot shows a larger amount of high values on the right side of the plot. This means that higher values in this feature will increase sales.
+    - Outlet_Type_Grocery
+      - The majority of high values for this feature are on the left-hand side of the plot. Items sold from outlets identified as grocery stores will sell for a lesser amount.
+    - Outlet_Type_Supermarket 3
+      - There is a high concentraion of high values on the right-hand side of the plot. Items sold from outlets identified as supermarket 3 will see more sales.
+
 ### Final Model Output
 Linear Regression Training Scores:
 
