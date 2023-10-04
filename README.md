@@ -102,6 +102,32 @@ Overall, the top 5 majority of features are the same.
     - Outlet_Type_Supermarket 3
       - There is a high concentraion of high values on the right-hand side of the plot. Items sold from outlets identified as supermarket 3 will see more sales.
 
+---
+### Local Explanations:
+#### Example 1 - An item from a grocery store with a high MRP
+**SHAP Plot**
+![](images/example_1_shap_force_plot.jpg)
+The primary factor that contributed towards less sales was that the item was sold at a grocery store. Conversely, the MRP was the most positive factor.
+
+**Lime Plot**
+![](images/example_1_lime_plot.jpg)
+The Lime Plot also shows a low predicted amount of sales for this item. Two positive factors are:
+- An Item_MRP greater than 195.71
+- A visibility factor of <=0.3
+
+It can be seen that the item being sold from a grocery store is still the largest negative force impacting sales.
+
+#### Example 2 - An item from a Type3 Supermarket with high MRP
+![](images/example_2_shap_force_plot.jpg)
+The Item_MRP strongly pushes the prediction towards the right with a predicted value of 7121.10. This far exceeds the base value of 2212, making this prediction a potential outlier.
+- The only negative feature affecting the prediction is Item_Visibility, with a marginal effect.
+
+![](images/example_2_lime_plot.jpg)
+- Items not being sold at a grocery store is a major factor and had a major positive contribution to sales.
+- Items with an MRP greater than 195 may increase 1883 sales.
+- Food items appear to be less popular and are a more common negative force which drives down the prediction.
+
+---
 ### Final Model Output
 Linear Regression Training Scores:
 
